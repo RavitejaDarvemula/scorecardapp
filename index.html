@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+    <title>Basketball Scorecard</title>
+    <link
+      rel="shortcut icon"
+      type="image"
+      href="https://images.unsplash.com/photo-1627627256672-027a4613d028?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="column">
+        <h3>Team A</h3>
+        <h2 id="home--score">0</h2>
+        <div>
+          <button id="home--score--btn1" onclick="incrementOne()">+1</button>
+          <button id="home--score--btn2" onclick="incrementTwo()">+2</button>
+          <button id="home--score--btn3" onclick="incrementThree()">+3</button>
+        </div>
+      </div>
+      <div class="column">
+        <h3>Team B</h3>
+        <h2 id="guest--score">0</h2>
+        <div>
+          <button id="guest--score--btn1" onclick="incrementgOne()">+1</button>
+          <button id="guest--score--btn1" onclick="incrementgTwo()">+2</button>
+          <button id="guest--score--btn1" onclick="incrementgThree()">
+            +3
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button id="reset-btn" onclick="reset()">Reset</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
